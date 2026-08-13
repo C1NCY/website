@@ -10,7 +10,7 @@
 
 :root {
   /* --- Layout --- */
-  --max-width: 1180px; /* cap on .section-container / .nav-container / .footer-container */
+  --max-width: 90vw; /* cap on .section-container / .nav-container / .footer-container */
   --gutter: 48px; /* side padding those containers keep on small screens */
   --gutter-mobile: 32px;
   --nav-height: 100px;

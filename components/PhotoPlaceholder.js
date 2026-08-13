@@ -1,7 +1,4 @@
 // Drop-in placeholder for anywhere a real photo should go.
-// To use a real photo: delete the <PhotoPlaceholder /> and replace with
-// e.g. <img src="/images/team-photo.jpg" alt="C1ncy team at competition" />
-// Put image files in the /public/images folder.
 export default function PhotoPlaceholder({ label = "Add Photo", ratio = "4 / 3", dark = false }) {
   return (
     <div

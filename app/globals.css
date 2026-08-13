@@ -107,7 +107,7 @@
 
 /* Shared "label" mechanics (font/weight/tracking/case) reused by every
    small uppercase tag on the site. Color and size are set per-class below
-   since those intentionally vary. */
+   since those vary. */
 .eyebrow,
 .discipline-tag,
 .stack-inline-label,
@@ -203,7 +203,7 @@
 }
 
 /* --------------------------------
-   PHOTO PLACEHOLDERS + REAL PHOTOS
+   PHOTO PLACEHOLDERS & REAL PHOTOS
    Reusable box for anywhere a real photo should eventually go — set an
    IMAGES.* path in lib/site-config.js and the page swaps this out for a
    real <img class="cover-image"> automatically.
@@ -443,6 +443,12 @@
 .stat {
   padding: 34px 28px 30px;
   border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.stat:hover {
+  background: rgba(167, 163, 163, 0.351);
+  /* transform: translateY(-4px); */
 }
 
 .stat:first-child {
@@ -552,7 +558,7 @@
 
 .major-card:hover {
   background: rgba(255, 255, 255, 0.45);
-  transform: translateY(-4px);
+  /* transform: translateY(-4px); */
 }
 
 .major-percentage {

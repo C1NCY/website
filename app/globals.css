@@ -1,6 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
 
 /* ===================================================================
    DESIGN TOKENS
@@ -31,7 +33,7 @@
 
   /* --- Color: text --- */
   --text: #17191b;
-  --muted: #62676b; /* secondary text on light backgrounds */
+  --muted: #26282a; /* secondary text on light backgrounds */
   --muted-on-dark: #a7abad; /* secondary text on dark backgrounds */
   --muted-on-dark-soft: #858a8d; /* tertiary/dimmer text on dark backgrounds (footer) */
 
@@ -59,6 +61,7 @@
   --label-size: 0.72rem; /* eyebrow — the most prominent label */
   --label-size-sm: 0.65rem; /* secondary tags/captions */
   --label-size-xs: 0.62rem; /* tightest tags (sponsor tier, discipline index) */
+
 
   /* --- Motion --- */
   --transition: 180ms ease;
@@ -163,7 +166,7 @@
 
   font-size: var(--font-size-display-md);
   letter-spacing: -0.05em;
-  line-height: 0.95;
+  line-height: 1.05;
 }
 
 .section-description {

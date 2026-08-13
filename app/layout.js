@@ -1,22 +1,25 @@
-import { Space_Grotesk, Inter, JetBrains_Mono } from "next/font/google";
+import { Space_Grotesk, Inter, JetBrains_Mono, Orbitron} from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { CLUB } from "@/lib/site-config";
 
-const display = Space_Grotesk({
+// const display = Space_Grotesk({
+const display = Orbitron({
   subsets: ["latin"],
   weight: ["500", "600", "700"],
   variable: "--font-display",
 });
 
-const body = Inter({
+// const body = Inter({
+const body = Space_Grotesk({
   subsets: ["latin"],
   weight: ["400", "500", "600"],
   variable: "--font-body",
 });
 
-const mono = JetBrains_Mono({
+// const mono = JetBrains_Mono({
+const mono = Orbitron({
   subsets: ["latin"],
   weight: ["400", "500"],
   variable: "--font-mono",

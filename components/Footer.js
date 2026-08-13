@@ -43,6 +43,16 @@ function SocialIcon({ type }) {
       </svg>
     );
   }
+  if (type === "getinvolveduc") {
+    return (
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path
+          fill="currentColor"
+          d="M11.6 17.38 6.32 8.14c0-3.96 5.28 1.32 7.92 0l6.6-3.96A1.32 1.32 45 103.68 20.02c9.24 7.92 21.12 1.32 19.8-11.88l-6.6 3.96c-2.64 2.64-1.32 10.56-5.28 5.28"
+        />
+      </svg>
+    );
+  }
 
   return null;
 }

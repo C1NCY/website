@@ -9,7 +9,7 @@ export default function ContactPage() {
           <h1>Contact</h1>
           <p>
             Interested in joining {CLUB.shortName}? No experience required — come to
-            a meeting and see what we&apos;re building.
+            a meeting and see what we're building.
           </p>
         </div>
 

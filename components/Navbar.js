@@ -14,7 +14,7 @@ export default function Navbar() {
           <img src={IMAGES.logo} alt={`${CLUB.shortName} logo`} className="brand-mark" />
 
           <span className="brand-text">
-            <strong>{CLUB.shortName}</strong>
+            {/* <strong>{CLUB.shortName}</strong> */}
             <small>UC VEX U ROBOTICS</small>
           </span>
         </Link>

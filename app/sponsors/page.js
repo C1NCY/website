@@ -5,7 +5,7 @@ import PhotoPlaceholder from "@/components/PhotoPlaceholder";
 // Give each sponsor a `logo` path once you have real logos
 // (e.g. "/images/sponsors/company.png"); leave it null for a placeholder.
 const SPONSORS = [
-  { name: "Sponsor Name", tier: "Title Sponsor", url: "https://example.com", logo: null },
+  // { name: "Sponsor Name", tier: "Title Sponsor", url: "https://example.com", logo: null },
 ];
 
 export default function SponsorsPage() {

@@ -109,14 +109,33 @@ export default function Home() {
       {/* ENGINEERING BEYOND THE FIELD */}
       <section className="outreach-section">
         <div className="section-container">
-          <div className="section-heading">
-            <p className="eyebrow">Engineering beyond the field</p>
-            <h2>We believe robotics is bigger than competition.</h2>
-            <p className="section-description">
-              {CLUB.shortName} works to expand access to STEM education,
-              support our community, and introduce students to engineering
-              through hands-on experiences.
-            </p>
+
+          <div className="outreach-intro">
+            <div className="section-heading">
+              <p className="eyebrow">Engineering beyond the field</p>
+              <h2>We believe robotics is bigger than competition.</h2>
+              <p className="section-description">
+                {CLUB.shortName} works to expand access to STEM education,
+                support our community, and introduce students to engineering
+                through hands-on experiences.
+              </p>
+            </div>
+
+            <div className="outreach-photo">
+              {IMAGES.outreach ? (
+                // eslint-disable-next-line @next/next/no-img-element
+                <img
+                  src={IMAGES.outreach}
+                  alt="Outreach event"
+                  className="cover-image"
+                />
+              ) : (
+                <PhotoPlaceholder
+                  label="Add outreach or volunteering photo"
+                  ratio="21 / 9"
+                />
+              )}
+            </div>
           </div>
 
           <div className="outreach-grid">
@@ -128,14 +147,6 @@ export default function Home() {
             ))}
           </div>
 
-          <div className="outreach-photo">
-            {IMAGES.outreach ? (
-              // eslint-disable-next-line @next/next/no-img-element
-              <img src={IMAGES.outreach} alt="Outreach event" className="cover-image" />
-            ) : (
-              <PhotoPlaceholder label="Add outreach or volunteering photo" ratio="21 / 9" />
-            )}
-          </div>
         </div>
       </section>
 

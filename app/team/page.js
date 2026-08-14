@@ -6,10 +6,10 @@ import PhotoPlaceholder from "@/components/PhotoPlaceholder";
 // have real headshots (e.g. "/images/roster/full-name.jpg"); leave it null
 // to keep the placeholder.
 const MEMBERS = [
-  { name: "Full Name", role: "Team Captain", year: "Senior", photo: null },
-  { name: "Full Name", role: "Lead Programmer", year: "Junior", photo: null },
-  { name: "Full Name", role: "Mechanical Lead", year: "Sophomore", photo: null },
-  { name: "Full Name", role: "Member", year: "Freshman", photo: null },
+  { name: "Full Name", role: "Team Captain", year: "3rd year", photo: null },
+  { name: "Full Name", role: "Lead Programmer", year: "3rd year", photo: null },
+  { name: "Full Name", role: "Mechanical Lead", year: "3rd year", photo: null },
+  { name: "Full Name", role: "Member", year: "2nd year", photo: null },
 ];
 
 export default function TeamPage() {

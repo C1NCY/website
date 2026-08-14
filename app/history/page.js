@@ -4,8 +4,13 @@ import { CLUB } from "@/lib/site-config";
 const SEASONS = [
   {
     year: "2026–27",
-    game: "Game TBD",
-    highlights: ["Club founded", "First season competing"],
+    game: "Override",
+    highlights: ["First season competing"],
+  },
+  {
+    year: "2024–25",
+    game: "Push Back",
+    highlights: ["Club founded", "Started volunteering"],
   },
 ];
 
@@ -16,7 +21,7 @@ export default function HistoryPage() {
         <div className="page-header">
           <p className="eyebrow">Season log</p>
           <h1>History &amp; Achievements</h1>
-          <p>A record of every season {CLUB.shortName} has competed, game by game.</p>
+          <p>A record of every season of {CLUB.shortName}.</p>
         </div>
 
         <div className="season-list">

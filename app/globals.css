@@ -31,9 +31,10 @@
 
   /* --- Color: text --- */
   --text: #17191b;
-  --muted: #26282a; /* secondary text on light backgrounds */
-  --muted-on-dark: #a7abad; /* secondary text on dark backgrounds */
-  --muted-on-dark-soft: #858a8d; /* tertiary/dimmer text on dark backgrounds (footer) */
+  --muted: #B8B8B8; /* secondary text on --background */
+  --muted-on-light: #4f4f4f; /* secondary text on --surface-alt */
+  --muted-on-dark: #a7abad; /* secondary text on --surface-dark */
+  --muted-on-dark-soft: #858a8d; /* tertiary/dimmer text on footer */
 
   /* --- Color: lines & fills --- */
   --line: #dedfdb; /* borders on light backgrounds */
@@ -51,14 +52,15 @@
   --font-size-display-md: clamp(2.4rem, 5vw, 4.5rem); /* standard section h2 */
   --font-size-display-sm: clamp(2.2rem, 4.2vw, 3.6rem); /* narrower two-column h2 (about-grid) */
   --font-size-subhead: 1.2rem; /* card/list-item headings — discipline, outreach, roster, sponsor names */
+  --font-size-navbar: 1rem;
 
   /* --- Typography: labels (eyebrows, tags, mono captions) --- */
   --label-font: var(--font-mono);
   --label-weight: 600;
   --label-tracking: 0.12em;
-  --label-size: 0.72rem; /* eyebrow — the most prominent label */
-  --label-size-sm: 0.65rem; /* secondary tags/captions */
-  --label-size-xs: 0.62rem; /* tightest tags (sponsor tier, discipline index) */
+  --label-size: 1rem; /* eyebrow — the most prominent label */
+  --label-size-sm: 0.9rem; /* secondary tags/captions */
+  --label-size-xs: 0.8rem; /* tightest tags (sponsor tier, discipline index) */
 
 
   /* --- Motion --- */
@@ -148,6 +150,7 @@
   color: white;
 }
 
+
 .sponsor-tier {
   color: var(--accent);
   font-size: var(--label-size-xs);
@@ -170,7 +173,7 @@
 .section-description {
   max-width: 620px;
   margin-top: 20px;
-  color: var(--muted);
+  color: var(--muted-on-light);
   line-height: 1.7;
 }
 
@@ -304,9 +307,9 @@
 .brand-text small {
   margin-top: 5px;
 
-  color: var(--muted);
-  font-family: var(--font-mono);
-  font-size: 0.55rem;
+  color: var(--text);
+  font-family: var(--font-display);
+  font-size: var(--font-size-navbar);
   letter-spacing: 0.1em;
 }
 
@@ -317,7 +320,7 @@
 }
 
 .desktop-nav a {
-  color: var(--muted);
+  color: var(--text);
   font-family: var(--font-mono);
   font-size: var(--label-size-sm);
   font-weight: 500;
@@ -386,6 +389,8 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
+
+  line-height: 3;
 
   min-height: 48px;
   padding: 0 22px;
@@ -470,7 +475,7 @@
   max-width: 170px;
   margin: 14px 0 0;
 
-  color: var(--muted);
+  color: var(--muted-on-light);
   font-size: 0.88rem;
   line-height: 1.45;
 }
@@ -849,6 +854,14 @@
   border-bottom: 1px solid var(--line);
 }
 
+.outreach-intro {
+  display: grid;
+  grid-template-columns: 1fr 0.8fr;
+  gap: 4rem;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
 .outreach-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -870,12 +883,14 @@
 
 .outreach-card p {
   margin: 12px 0 0;
-  color: var(--muted);
+  color: var(--muted); 
   font-size: 0.88rem;
   line-height: 1.6;
 }
 
 .outreach-photo {
+  max-width: 100%;
+  height: auto;
   margin-top: var(--gap-md);
 }
 
@@ -921,7 +936,7 @@
 
 .roster-role {
   margin: 4px 0 0;
-  color: var(--muted);
+  color: var(--muted-on-light);
   font-size: 0.9rem;
 }
 
@@ -961,7 +976,7 @@
 
 .season-game {
   margin-top: 4px;
-  color: var(--muted);
+  color: var(--muted-on-light);
   font-size: 0.8rem;
 }
 

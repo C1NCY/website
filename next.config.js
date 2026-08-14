@@ -6,8 +6,8 @@ const nextConfig = {
   // to org.github.io/vexupage). If you rename the repo, update this too.
 
   // Seting up a custom domain instead, delete these two lines entirely.
-  basePath: "/vexupage-main",
-  assetPrefix: "/vexupage-main/",
+  // basePath: "/vexupage-main",
+  // assetPrefix: "/vexupage-main/",
 };
 
 module.exports = nextConfig;

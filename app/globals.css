@@ -1,8 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
-
 
 /* ===================================================================
    DESIGN TOKENS
@@ -12,8 +10,8 @@
 
 :root {
   /* --- Layout --- */
-  --max-width: 90vw; /* cap on .section-container / .nav-container / .footer-container */
-  --gutter: 48px; /* side padding those containers keep on small screens */
+  --max-width: 3000px; /* cap on .section-container / .nav-container / .footer-container */
+  --gutter: 5vw; /* side padding those containers keep on small screens */
   --gutter-mobile: 32px;
   --nav-height: 100px;
   --logo-size: 100px; /* brand mark, used identically in header + footer */

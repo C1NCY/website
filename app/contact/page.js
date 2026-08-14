@@ -8,8 +8,8 @@ export default function ContactPage() {
           <p className="eyebrow">Say hello</p>
           <h1>Contact</h1>
           <p>
-            Interested in joining {CLUB.shortName}? No experience required — come to
-            a meeting and see what we're building.
+            Are you a student at the University of Cincinnati and interested in joining {CLUB.shortName}? 
+            No experience required - come to a meeting and see what we're building. 
           </p>
         </div>
 

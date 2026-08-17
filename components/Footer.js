@@ -80,6 +80,7 @@ export default function Footer() {
           <div>
             <p className="footer-label">Contact</p>
             <p>{CONTACT.email}</p>
+            <p> {CONTACT.tempLocation}</p>
             <p>{CONTACT.meetingInfo}</p>
           </div>
 

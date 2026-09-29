@@ -12,6 +12,15 @@ const MEMBERS = [
   { name: "Eric Bowler", role: "Notebook Lead", year: "3rd year", photo: null, major: "Mechanical Engineering Technology" },
   { name: "Nicholas Lewis", role: "Build/Manufacuring Lead", year: "2nd year", photo: null, major: "Aerospace Engineering" },
 ];
+const EXECUTIVE = [
+  { name: "Chester Parker", role: "President", year: "3rd year", photo: null, major: "Mechanical Engineering" },
+  { name: "Cameron Molina", role: "Vice-President", year: "3rd year", photo: null, major: "Mechanical Engineering" },
+  { name: "Mason Pyle", role: "Treasurer", year: "3rd year", photo: null, major: "Computer Engineering" },
+  { name: "Lucy McCormick", role: "Secretary and Communications Chair", year: "3rd year", photo: null, major: "Mechanical Engineering" },
+  { name: "Chester Parker", role: "Advisor", year: "3rd year", photo: null, major: "Mechanical Engineering" },
+  {name: "Braden Resseguie", role: "Sponsership Lead", year: "2nd year", photo: null, major: "Computer Engineering"},
+  {name: "Evelyn Green", role: "Communications Chair", year: "2nd year", photo: null, major: "Computer Science"}
+];
 
 export default function TeamPage() {
   return (

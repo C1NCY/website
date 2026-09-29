@@ -6,10 +6,11 @@ A  site for the University of Cincinnati's VEX U robotics team
 
 You need [Node.js](https://nodejs.org/) 18+ installed.
 
-```bash
+""""
 npm install
+cd from \website into \website\app
 npm run dev
-```
+"""
 
 Open http://localhost:3000 — the site hot-reloads as you edit files.
 

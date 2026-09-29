@@ -944,6 +944,12 @@
   margin: 6px 0 0;
 }
 
+.roster-major {
+  margin: 4px 0 0;
+  color: var(--muted-on-light);
+  font-size: 0.65rem;
+}
+
 /* --------------------------------
    HISTORY / SEASON LOG
 -------------------------------- */

@@ -1,4 +1,4 @@
-import { CLUB, TEAM } from "@/lib/site-config";
+import { CLUB, TEAM, IMAGES } from "@/lib/site-config";
 import PhotoPlaceholder from "@/components/PhotoPlaceholder";
 
 // Edit this array to update your roster. Add/remove members freely —
@@ -6,10 +6,11 @@ import PhotoPlaceholder from "@/components/PhotoPlaceholder";
 // have real headshots (e.g. "/images/roster/full-name.jpg"); leave it null
 // to keep the placeholder.
 const MEMBERS = [
-  { name: "Full Name", role: "Team Captain", year: "3rd year", photo: null },
-  { name: "Full Name", role: "Lead Programmer", year: "3rd year", photo: null },
-  { name: "Full Name", role: "Mechanical Lead", year: "3rd year", photo: null },
-  { name: "Full Name", role: "Member", year: "2nd year", photo: null },
+  { name: "Cameron Molina", role: "Team Captain", year: "3rd year", photo: IMAGES.teamCaptain, major: "Mechanical Engineering" },
+  { name: "Christopher Howell", role: "CAD Lead", year: "3rd year", photo: null, major: "Aerospace Engineering" },
+  { name: "Mason Pyle", role: "Controls Lead", year: "3rd year", photo: null, major: "Computer Engineering" },
+  { name: "Eric Bowler", role: "Notebook Lead", year: "3rd year", photo: null, major: "Mechanical Engineering Technology" },
+  { name: "Nicholas Lewis", role: "Build/Manufacuring Lead", year: "2nd year", photo: null, major: "Aerospace Engineering" },
 ];
 
 export default function TeamPage() {
@@ -36,7 +37,8 @@ export default function TeamPage() {
               )}
               <p className="roster-name">{m.name}</p>
               <p className="roster-role">{m.role}</p>
-              <p className="roster-year">{m.year}</p>
+              <p className="roster-year">{m.year} </p>
+              <p className="roster-major">{m.major}</p>
             </div>
           ))}
         </div>

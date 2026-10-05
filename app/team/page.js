@@ -6,18 +6,17 @@ import PhotoPlaceholder from "@/components/PhotoPlaceholder";
 // have real headshots (e.g. "/images/roster/full-name.jpg"); leave it null
 // to keep the placeholder.
 const MEMBERS = [
-  { name: "Cameron Molina", role: "Team Captain", year: "3rd year", photo: IMAGES.teamCaptain, major: "Mechanical Engineering" },
+  { name: "Cameron Molina", role: "Team Captain", year: "3rd year", photo: IMAGES.CameronM, major: "Mechanical Engineering" },
   { name: "Christopher Howell", role: "CAD Lead", year: "3rd year", photo: null, major: "Aerospace Engineering" },
-  { name: "Mason Pyle", role: "Controls Lead", year: "3rd year", photo: null, major: "Computer Engineering" },
+  { name: "Mason Pyle", role: "Controls Lead", year: "3rd year", photo: IMAGES.MasonP, major: "Computer Engineering" },
   { name: "Eric Bowler", role: "Notebook Lead", year: "3rd year", photo: null, major: "Mechanical Engineering Technology" },
   { name: "Nicholas Lewis", role: "Build/Manufacuring Lead", year: "2nd year", photo: null, major: "Aerospace Engineering" },
 ];
 const EXECUTIVE = [
-  { name: "Chester Parker", role: "President", year: "3rd year", photo: null, major: "Mechanical Engineering" },
+  { name: "Chester Parker", role: "President", year: "3rd year", photo: IMAGES.ChesterP, major: "Mechanical Engineering" },
   { name: "Cameron Molina", role: "Vice-President", year: "3rd year", photo: null, major: "Mechanical Engineering" },
   { name: "Mason Pyle", role: "Treasurer", year: "3rd year", photo: null, major: "Computer Engineering" },
-  { name: "Lucy McCormick", role: "Secretary and Communications Chair", year: "3rd year", photo: null, major: "Mechanical Engineering" },
-  { name: "Chester Parker", role: "Advisor", year: "3rd year", photo: null, major: "Mechanical Engineering" },
+  { name: "Lucy McCormick", role: "Secretary and Communications Chair", year: "3rd year", photo: IMAGES.LucyM, major: "Mechanical Engineering" },
   {name: "Braden Resseguie", role: "Sponsership Lead", year: "2nd year", photo: null, major: "Computer Engineering"},
   {name: "Evelyn Green", role: "Communications Chair", year: "2nd year", photo: null, major: "Computer Science"}
 ];

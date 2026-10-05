@@ -82,6 +82,7 @@ export default function Footer() {
             <p>{CONTACT.email}</p>
             <p> {CONTACT.tempLocation}</p>
             <p>{CONTACT.meetingInfo}</p>
+            <p>{CONTACT.statement}</p>
           </div>
 
           <div>

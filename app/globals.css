@@ -160,6 +160,18 @@
   color: var(--accent);
   font-size: var(--label-size-sm);
 }
+.project-leads{
+  color: var(--accent);
+  font-size: var(--label-size-sm);
+  margin-top: 20px;
+  font-size: 30px;
+}
+.executive-board-title{
+  color: var(--accent);
+  font-size: var(--label-size-sm);
+  margin-top: 70px;
+  font-size: 30px;
+}
 
 .section-heading h2 {
   max-width: 650px;
@@ -919,13 +931,13 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 32px;
-  margin-top: 70px;
+  margin-top: 30px;
 }
 .executive-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 32px;
-  margin-top: 70px;
+  margin-top: 30px;
 }
 
 

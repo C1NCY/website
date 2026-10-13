@@ -33,7 +33,9 @@ export default function TeamPage() {
             programming, and strategy throughout the season.
           </p>
         </div>
-
+        <p className="project-leads">
+          Project Leads:
+        </p>
         <div className="roster-grid">
           {MEMBERS.map((m, i) => (
             <div className="roster-card" key={i}>
@@ -50,7 +52,11 @@ export default function TeamPage() {
             </div>
           ))}
         </div>
-
+        <div>
+        </div>
+        <p className="executive-board-title">
+          Executive Board:
+        </p>
         <div className="executive-grid">
           {EXECUTIVE.map((m, i) => (
             <div className="roster-card" key={i}>

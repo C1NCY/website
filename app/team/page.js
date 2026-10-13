@@ -17,7 +17,7 @@ const EXECUTIVE = [
   { name: "Cameron Molina", role: "Vice-President", year: "3rd year", photo: IMAGES.CameronM, major: "Mechanical Engineering" },
   { name: "Mason Pyle", role: "Treasurer", year: "3rd year", photo: IMAGES.MasonP, major: "Computer Engineering" },
   { name: "Lucy McCormick", role: "Secretary and Communications Chair", year: "3rd year", photo: IMAGES.LucyM, major: "Mechanical Engineering" },
-  {name: "Braden Resseguie", role: "Sponsership Lead", year: "2nd year", photo: IMAGES.BradenR, major: "Computer Engineering"},
+  {name: "Braden Resseguie", role: "Sponsorship Lead", year: "2nd year", photo: IMAGES.BradenR, major: "Computer Engineering"},
   {name: "Evelyn Green", role: "Communications Chair", year: "2nd year", photo: IMAGES.EvelynG, major: "Computer Science"}
 ];
 

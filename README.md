@@ -8,6 +8,7 @@ You need [Node.js](https://nodejs.org/) 18+ installed.
 
 ```bash
 npm install
+cd from \website into \website\app
 npm run dev
 ```
 

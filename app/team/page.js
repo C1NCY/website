@@ -1,4 +1,4 @@
-import { CLUB, TEAM } from "@/lib/site-config";
+import { CLUB, TEAM, IMAGES } from "@/lib/site-config";
 import PhotoPlaceholder from "@/components/PhotoPlaceholder";
 
 // Edit this array to update your roster. Add/remove members freely —
@@ -6,10 +6,19 @@ import PhotoPlaceholder from "@/components/PhotoPlaceholder";
 // have real headshots (e.g. "/images/roster/full-name.jpg"); leave it null
 // to keep the placeholder.
 const MEMBERS = [
-  { name: "Full Name", role: "Team Captain", year: "3rd year", photo: null },
-  { name: "Full Name", role: "Lead Programmer", year: "3rd year", photo: null },
-  { name: "Full Name", role: "Mechanical Lead", year: "3rd year", photo: null },
-  { name: "Full Name", role: "Member", year: "2nd year", photo: null },
+  { name: "Cameron Molina", role: "Team Captain", year: "3rd year", photo: IMAGES.CameronM, major: "Mechanical Engineering" },
+  { name: "Christopher Howell", role: "CAD Lead", year: "3rd year", photo: IMAGES.ChristopherH, major: "Aerospace Engineering" },
+  { name: "Mason Pyle", role: "Controls Lead", year: "3rd year", photo: IMAGES.MasonP, major: "Computer Engineering" },
+  { name: "Eric Bowler", role: "Notebook Lead", year: "3rd year", photo: IMAGES.EricB, major: "Mechanical Engineering Technology" },
+  { name: "Nicholas Lewis", role: "Build/Manufacuring Lead", year: "2nd year", photo: IMAGES.NicholasL, major: "Aerospace Engineering" },
+];
+const EXECUTIVE = [
+  { name: "Chester Parker", role: "President", year: "3rd year", photo: IMAGES.ChesterP, major: "Mechanical Engineering" },
+  { name: "Cameron Molina", role: "Vice-President", year: "3rd year", photo: IMAGES.CameronM, major: "Mechanical Engineering" },
+  { name: "Mason Pyle", role: "Treasurer", year: "3rd year", photo: IMAGES.MasonP, major: "Computer Engineering" },
+  { name: "Lucy McCormick", role: "Secretary and Communications Chair", year: "3rd year", photo: IMAGES.LucyM, major: "Mechanical Engineering" },
+  {name: "Braden Resseguie", role: "Sponsership Lead", year: "2nd year", photo: IMAGES.BradenR, major: "Computer Engineering"},
+  {name: "Evelyn Green", role: "Communications Chair", year: "2nd year", photo: IMAGES.EvelynG, major: "Computer Science"}
 ];
 
 export default function TeamPage() {
@@ -24,7 +33,9 @@ export default function TeamPage() {
             programming, and strategy throughout the season.
           </p>
         </div>
-
+        <p className="project-leads">
+          Project Leads:
+        </p>
         <div className="roster-grid">
           {MEMBERS.map((m, i) => (
             <div className="roster-card" key={i}>
@@ -36,7 +47,29 @@ export default function TeamPage() {
               )}
               <p className="roster-name">{m.name}</p>
               <p className="roster-role">{m.role}</p>
-              <p className="roster-year">{m.year}</p>
+              <p className="roster-year">{m.year} </p>
+              <p className="roster-major">{m.major}</p>
+            </div>
+          ))}
+        </div>
+        <div>
+        </div>
+        <p className="executive-board-title">
+          Executive Board:
+        </p>
+        <div className="executive-grid">
+          {EXECUTIVE.map((m, i) => (
+            <div className="roster-card" key={i}>
+              {m.photo ? (
+                // eslint-disable-next-line @next/next/no-img-element
+                <img src={m.photo} alt={m.name} style={{ width: "100%", aspectRatio: " 4 / 3 ", objectFit: "cover"}} />
+              ) : (
+                <PhotoPlaceholder label="Add headshot" />
+              )}
+              <p className="roster-name">{m.name}</p>
+              <p className="roster-role">{m.role}</p>
+              <p className="roster-year">{m.year} </p>
+              <p className="roster-major">{m.major}</p>
             </div>
           ))}
         </div>

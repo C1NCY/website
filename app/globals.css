@@ -921,6 +921,13 @@
   gap: 32px;
   margin-top: 70px;
 }
+.executive-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  margin-top: 70px;
+}
+
 
 .roster-card {
   display: flex;

@@ -6,19 +6,19 @@ import PhotoPlaceholder from "@/components/PhotoPlaceholder";
 // have real headshots (e.g. "/images/roster/full-name.jpg"); leave it null
 // to keep the placeholder.
 const MEMBERS = [
-  { name: "Cameron Molina", role: "Team Captain", year: "3rd year", photo: IMAGES.CameronM, major: "Mechanical Engineering" },
-  { name: "Christopher Howell", role: "CAD Lead", year: "3rd year", photo: IMAGES.ChristopherH, major: "Aerospace Engineering" },
-  { name: "Mason Pyle", role: "Controls Lead", year: "3rd year", photo: IMAGES.MasonP, major: "Computer Engineering" },
-  { name: "Eric Bowler", role: "Notebook Lead", year: "3rd year", photo: IMAGES.EricB, major: "Mechanical Engineering Technology" },
-  { name: "Nicholas Lewis", role: "Build/Manufacuring Lead", year: "2nd year", photo: IMAGES.NicholasL, major: "Aerospace Engineering" },
+  { name: "Cameron Molina", role: "Team Captain", year: "3rd year", photo: IMAGES.CameronM, major: "Mechanical Engineering", href: "https://www.linkedin.com/in/cameron-molina-3b0ab234b/" },
+  { name: "Christopher Howell", role: "CAD Lead", year: "3rd year", photo: IMAGES.ChristopherH, major: "Aerospace Engineering", href: "https://www.linkedin.com/in/cvhowell" },
+  { name: "Mason Pyle", role: "Controls Lead", year: "3rd year", photo: IMAGES.MasonP, major: "Computer Engineering", href: "https://www.linkedin.com/in/mason-pyle/" },
+  { name: "Eric Bowler", role: "Notebook Lead", year: "3rd year", photo: IMAGES.EricB, major: "Mechanical Engineering Technology", href: "https://www.linkedin.com/in/ericbowler201186/" },
+  { name: "Nicholas Lewis", role: "Build/Manufacuring Lead", year: "2nd year", photo: IMAGES.NicholasL, major: "Aerospace Engineering", href: "https://www.linkedin.com/in/nicholas-lewis-34876538b/" },
 ];
 const EXECUTIVE = [
-  { name: "Chester Parker", role: "President", year: "3rd year", photo: IMAGES.ChesterP, major: "Mechanical Engineering" },
-  { name: "Cameron Molina", role: "Vice-President", year: "3rd year", photo: IMAGES.CameronM, major: "Mechanical Engineering" },
-  { name: "Mason Pyle", role: "Treasurer", year: "3rd year", photo: IMAGES.MasonP, major: "Computer Engineering" },
-  { name: "Lucy McCormick", role: "Secretary and Communications Chair", year: "3rd year", photo: IMAGES.LucyM, major: "Mechanical Engineering" },
-  {name: "Braden Resseguie", role: "Sponsorship Lead", year: "2nd year", photo: IMAGES.BradenR, major: "Computer Engineering"},
-  {name: "Evelyn Green", role: "Communications Chair", year: "2nd year", photo: IMAGES.EvelynG, major: "Computer Science"}
+  { name: "Chester Parker", role: "President", year: "3rd year", photo: IMAGES.ChesterP, major: "Mechanical Engineering", href: "https://www.linkedin.com/in/chesterparker" },
+  { name: "Cameron Molina", role: "Vice-President", year: "3rd year", photo: IMAGES.CameronM, major: "Mechanical Engineering", href: "https://www.linkedin.com/in/cameron-molina-3b0ab234b/" },
+  { name: "Mason Pyle", role: "Treasurer", year: "3rd year", photo: IMAGES.MasonP, major: "Computer Engineering", href: "https://www.linkedin.com/in/mason-pyle/" },
+  { name: "Lucy McCormick", role: "Secretary and Communications Chair", year: "3rd year", photo: IMAGES.LucyM, major: "Mechanical Engineering", href: "https://www.linkedin.com/in/lucybmccormick/" },
+  {name: "Braden Resseguie", role: "Sponsorship Lead", year: "2nd year", photo: IMAGES.BradenR, major: "Computer Engineering", href: "https://www.linkedin.com/in/braden-resseguie/" },
+  {name: "Evelyn Green", role: "Communications Chair", year: "2nd year", photo: IMAGES.EvelynG, major: "Computer Science", href: "https://www.linkedin.com/in/evelyn-green-41b22228a/" },
 ];
 
 export default function TeamPage() {
@@ -45,7 +45,11 @@ export default function TeamPage() {
               ) : (
                 <PhotoPlaceholder label="Add headshot" />
               )}
-              <p className="roster-name">{m.name}</p>
+              <p className="roster-name">
+                <a href={m.href} target="_blank" rel="noopener noreferrer">
+                  {m.name}
+                </a>
+              </p>
               <p className="roster-role">{m.role}</p>
               <p className="roster-year">{m.year} </p>
               <p className="roster-major">{m.major}</p>
@@ -66,7 +70,11 @@ export default function TeamPage() {
               ) : (
                 <PhotoPlaceholder label="Add headshot" />
               )}
-              <p className="roster-name">{m.name}</p>
+              <p className="roster-name">
+                <a href={m.href} target="_blank" rel="noopener noreferrer">
+                  {m.name}
+                </a>
+              </p>
               <p className="roster-role">{m.role}</p>
               <p className="roster-year">{m.year} </p>
               <p className="roster-major">{m.major}</p>

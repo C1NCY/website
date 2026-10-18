@@ -5,7 +5,7 @@ import PhotoPlaceholder from "@/components/PhotoPlaceholder";
 // the grid reflows automatically. Give each member a `photo` path once you
 // have real headshots (e.g. "/images/roster/full-name.jpg"); leave it null
 // to keep the placeholder.
-const MEMBERS = [
+const PROJECTLEADS = [
   { name: "Cameron Molina", role: "Team Captain", year: "3rd year", photo: IMAGES.CameronM, major: "Mechanical Engineering", href: "https://www.linkedin.com/in/cameron-molina-3b0ab234b/" },
   { name: "Christopher Howell", role: "CAD Lead", year: "3rd year", photo: IMAGES.ChristopherH, major: "Aerospace Engineering", href: "https://www.linkedin.com/in/cvhowell" },
   { name: "Mason Pyle", role: "Controls Lead", year: "3rd year", photo: IMAGES.MasonP, major: "Computer Engineering", href: "https://www.linkedin.com/in/mason-pyle/" },
@@ -20,6 +20,8 @@ const EXECUTIVE = [
   {name: "Braden Resseguie", role: "Sponsorship Lead", year: "2nd year", photo: IMAGES.BradenR, major: "Computer Engineering", href: "https://www.linkedin.com/in/braden-resseguie/" },
   {name: "Evelyn Green", role: "Communications Chair", year: "2nd year", photo: IMAGES.EvelynG, major: "Computer Science", href: "https://www.linkedin.com/in/evelyn-green-41b22228a/" },
 ];
+
+const 
 
 export default function TeamPage() {
   return (
@@ -37,7 +39,7 @@ export default function TeamPage() {
           Project Leads:
         </p>
         <div className="roster-grid">
-          {MEMBERS.map((m, i) => (
+          {PROJECTLEADS.map((m, i) => (
             <div className="roster-card" key={i}>
               {m.photo ? (
                 // eslint-disable-next-line @next/next/no-img-element

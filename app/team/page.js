@@ -1,8 +1,8 @@
 import { CLUB, TEAM, } from "@/lib/site-config";
 
-import { ProjectLeads } from "./projectLeads";
-import { ExecutiveBoard } from "./executiveBoard";
-import { MemberTable } from "./Members";
+import { ProjectLeads } from "@/components/ProjectLeads";
+import { ExecutiveBoard } from "@/components/ExecutiveBoard";
+import { MemberTable } from ;
 
 
 // Edit this array to update your roster. Add/remove members freely —

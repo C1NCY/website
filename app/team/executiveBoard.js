@@ -35,3 +35,5 @@ function ExecutiveBoard() {
             </div>
         </div>
     )
+}
+export default ExecutiveBoard;

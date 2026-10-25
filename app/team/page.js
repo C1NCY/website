@@ -18,7 +18,8 @@ export default function TeamPage() {
           <h1>{CLUB.shortName}</h1>
           <p>
             Team {TEAM.number} — every member works across mechanical design,
-            programming, and strategy throughout the season.
+            programming, and strategy throughout the season. Feel free to click
+            our names to go to our LinkedIn pages!
           </p>
         </div>
         <ProjectLeads />

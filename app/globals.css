@@ -172,6 +172,12 @@
   margin-top: 70px;
   font-size: 30px;
 }
+.Member-Title{
+  color: var(--accent);
+  font-size: var(--label-size-sm);
+  margin-top: 70px;
+  font-size: 30px;
+}
 
 .section-heading h2 {
   max-width: 650px;
@@ -951,6 +957,9 @@
   font-family: var(--font-display);
   font-size: var(--font-size-subhead);
   font-weight: 600;
+}
+.roster-name a:hover{
+  text-decoration: underline;
 }
 
 .roster-role {
